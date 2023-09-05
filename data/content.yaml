@@ -35,12 +35,15 @@ Experience:
           - Mentoring and guiding the team to deliver the solution.
           - Working closely with corporate finance team in reconciling the order amount.
           - Designing the new system architecture for support marketplace orders.
+          - Ensuring best practices are being used in daily works.
+          - Improve application performance by reducing dependencies on other services.
         Badges: ['Go', 'PHP', 'MySQL', 'Redis', 'gRPC', 'GCP', 'C4', 'Git', 'Atlassian Suite']
       - Title: Senior Software Engineer
         Date: Mar 2019 - Nov 2019
         Details:
           - Complete and deploy the new consumer app (Scan & Go) on new platform.
           - Integrate NTUC Link in Scan & Go which allows customer to spend and earn points for their purchases.
+          - Giving training to other engineers for Go introduction.
         Badges: ['Go', 'PHP', 'MySQL', 'Redis', 'GCP', 'Diagrams.net']
   - Employer: Zumata
     Place: Singapore
@@ -59,6 +62,7 @@ Experience:
           - Develop the accounting module to track the client balances.
           - Deploy the entire set of microservice on Kubernetes with proper CI/CD pipeline.
           - Complete new version of API which emphasizes on polling to shorten time needed for client to get their initial result.
+          - Monitoring and supporting production system.
         Badges: ['Go', 'Ruby', 'RoR', 'PostgreSQL', 'Redis', 'GCP']
   - Employer: Intel
     Place: Penang, Malaysia
