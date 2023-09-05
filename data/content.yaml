@@ -11,7 +11,7 @@ BasicInfo:
     - Icon: fas fa-github
       Info: github.com/johansja
 
-Profile: I’m a backend engineer with over 10 years of experience. I can work both as an individual contributor and a team lead. I adheres to best practices in design, coding, testing and deployment. I constantly looking at improving myself in different areas.
+Profile: I'm a backend engineer with over 10 years of experience. I can work both as an individual contributor and a team lead. I adheres to best practices in design, coding, testing and deployment. I constantly looking at improving myself in different areas.
 
 Experience:
   - Employer: Straitdeer (a.k.a. Bitdeer)
@@ -94,14 +94,7 @@ Skills:
       - Python
       - Java
       - C
-      - HTML (including Jinja)
-      - Javascript
-      - CSS
-      - SASS
-      - SQL
       - C#
-      - Bash
-      - MATLAB
   - Family: Databases
     Items:
       - MySQL
