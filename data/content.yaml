@@ -1,0 +1,147 @@
+BasicInfo:
+  FirstName: Johan
+  LastName: Sim
+  Contacts:
+    - Icon: fas fa-phone
+      Info: +65 9864 0146
+    - Icon: fas fa-envelope
+      Info: johansja@gmail.com
+    - Icon: fas fa-map-marker-alt
+      Info: Singapore
+    - Icon: fas fa-github
+      Info: github.com/johansja
+
+Profile: I’m a backend engineer with over 10 years of experience. I can work both as an individual contributor and a team lead. I adheres to best practices in design, coding, testing and deployment. I constantly looking at improving myself in different areas.
+
+Experience:
+  - Employer: Straitdeer (a.k.a. Bitdeer)
+    Place: Singapore
+    Positions:
+      - Title: Principal Software Engineer
+        Date: Jan 2021 - Present
+        Details:
+          - Working closely with team members in maintaining and improving our existing system.
+          - Decoupling order component into a new microservice.
+          - Adding Filecoin support in order component.
+          - Improve reusability of Go libraries.
+        Badges: ['Go', 'PHP', 'MySQL', 'Redis', 'Aliyun', 'Docker', 'Rancher', 'Jira', 'Confluence', 'Jenkins', 'Git', 'GitLab']
+  - Employer: NTUC Enterprise Nexus Cooperative
+    Place: Singapore
+    Positions:
+      - Title: Backend Team Lead
+        Date: Dec 2019 - Dec 2021
+        Details:
+          - Lead Order Management System backend team.
+          - Mentoring and guiding the team to deliver the solution.
+          - Working closely with corporate finance team in reconciling the order amount.
+          - Designing the new system architecture for support marketplace orders.
+        Badges: ['Go', 'PHP', 'MySQL', 'Redis', 'gRPC', 'GCP', 'C4', 'Git', 'Atlassian Suite']
+      - Title: Senior Software Engineer
+        Date: Mar 2019 - Nov 2019
+        Details:
+          - Complete and deploy the new consumer app (Scan & Go) on new platform.
+          - Integrate NTUC Link in Scan & Go which allows customer to spend and earn points for their purchases.
+        Badges: ['Go', 'PHP', 'MySQL', 'Redis', 'GCP', 'Diagrams.net']
+  - Employer: Zumata
+    Place: Singapore
+    Positions:
+      - Title: Tech Lead
+        Date: Dec 2017 - Feb 2019
+        Details:
+          - Lead a teams of engineers in managing the entire client and supplier integration.
+          - Enhance the system to handle 10x client request with 5x booking conversion.
+          - Providing support to 12 new clients and potentially modifying the system to fit their requirements.
+          - Integrate 6 new suppliers, involve understanding supplier system and designing our integration to take in the new feeds.
+        Badges: ['Go', 'Elixir', 'Phoenix', 'PostgreSQL', 'MySQL', 'Redis', 'GCP', 'Pivotal Tracker', 'Draw.io']
+      - Title: Senior Software Engineer
+        Date: Feb 2015 - Nov 2017
+        Details:
+          - Develop the accounting module to track the client balances.
+          - Deploy the entire set of microservice on Kubernetes with proper CI/CD pipeline.
+          - Complete new version of API which emphasizes on polling to shorten time needed for client to get their initial result.
+        Badges: ['Go', 'Ruby', 'RoR', 'PostgreSQL', 'Redis', 'GCP']
+  - Employer: Intel
+    Place: Penang, Malaysia
+    Positions:
+      - Title: Software Engineer
+        Date: Jul 2011 - Jan 2015
+        Details:
+          - Develop various white label products which showcases the platform capability.
+        Badges: ['Python', 'Java', 'C', 'PostgreSQL', 'MQTT', 'Redis', 'Django']
+  - Employer: e-Business
+    Place: Penang, Malaysia
+    Positions:
+      - Title: Software Engineer
+        Date: Mar 2011 - Jun 2011
+        Details:
+          - Develop new Java system which replaces the proprietary C# system which has been decommissioned.
+        Badges: ['Java', 'C#', 'MySQL']
+
+Education:
+  - Course: Bachelor of Science in Computing
+    Place: University of Greenwich, United Kingdom
+    Date: Jul 2009 - Dec 2010
+  - Course: Diploma in Computer Science
+    Place: Methodist Pilley Institute, Malaysia
+    Date: Jul 2006 - Apr 2009
+
+Skills:
+  - Family: Programming Language
+    Items:
+      - Go
+      - PHP
+      - Elixir
+      - Python
+      - Java
+      - C
+      - HTML (including Jinja)
+      - Javascript
+      - CSS
+      - SASS
+      - SQL
+      - C#
+      - Bash
+      - MATLAB
+  - Family: Databases
+    Items:
+      - MySQL
+      - Redis
+      - PostgreSQL
+  - Family: Cloud Platform
+    Items:
+      - Google Cloud Platform (GCP) (GKE, Pub/Sub, Cloud Storage, Cloud Storage, Load Balancer, Cloud Run)
+      - Aliyun (Data Management System, Log Engine)
+  - Family: Frameworks
+    Items:
+      - gRPC
+      - Phoenix
+      - Ruby on Rails (RoR)
+      - Django
+  - Family: Design Tools
+    Items:
+      - C4
+      - Diagrams.net (f.k.a. Draw.io)
+  - Family: Developer Tools
+    Items:
+      - Visual Studio Code (VS Code)
+      - Git
+      - Docker
+      - Rancher
+      - Jenkins
+      - Atlassian Suite (Jira, Confluence, Bitbucket, OpsGenie)
+      - Pivotal Tracker
+      - MQTT
+      - Google Suites (Gmail, Drive)
+
+Languages:
+  - Name: Chinese
+    Level: Native
+  - Name: English
+    Level: Fluent
+  - Name: Malay
+    Level: Fluent
+
+Interests:
+  - Reading
+  - Singing
+  - Basketball
