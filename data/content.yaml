@@ -8,10 +8,10 @@ BasicInfo:
       Info: johansja@gmail.com
     - Icon: fas fa-map-marker-alt
       Info: Singapore
-    - Icon: fas fa-github
+    - Icon: fab fa-github
       Info: github.com/johansja
 
-Profile: I'm a backend engineer with over 10 years of experience. I can work both as an individual contributor and a team lead. I adheres to best practices in design, coding, testing and deployment. I constantly looking at improving myself in different areas.
+Profile: I'm a backend engineer with over 10 years of experience. I can work both as an individual contributor and a team lead. I adhere to best practices in design, coding, testing and deployment. I constantly look at improving myself in different areas.
 
 Experience:
   - Employer: Straitdeer (a.k.a. Bitdeer)
@@ -24,7 +24,7 @@ Experience:
           - Decoupling order component into a new microservice.
           - Adding Filecoin support in order component.
           - Improve reusability of Go libraries.
-        Badges: ['Go', 'PHP', 'MySQL', 'Redis', 'Aliyun', 'Docker', 'Rancher', 'Jira', 'Confluence', 'Jenkins', 'Git', 'GitLab']
+        Badges: ['Go', 'PHP', 'MySQL', 'Redis', 'Aliyun']
   - Employer: NTUC Enterprise Nexus Cooperative
     Place: Singapore
     Positions:
@@ -37,14 +37,14 @@ Experience:
           - Designing the new system architecture for support marketplace orders.
           - Ensuring best practices are being used in daily works.
           - Improve application performance by reducing dependencies on other services.
-        Badges: ['Go', 'PHP', 'MySQL', 'Redis', 'gRPC', 'GCP', 'C4', 'Git', 'Atlassian Suite']
+        Badges: ['Go', 'PHP', 'MySQL', 'Redis', 'gRPC', 'GCP', 'C4']
       - Title: Senior Software Engineer
         Date: Mar 2019 - Nov 2019
         Details:
           - Complete and deploy the new consumer app (Scan & Go) on new platform.
           - Integrate NTUC Link in Scan & Go which allows customer to spend and earn points for their purchases.
           - Giving training to other engineers for Go introduction.
-        Badges: ['Go', 'PHP', 'MySQL', 'Redis', 'GCP', 'Diagrams.net']
+        Badges: ['Go', 'PHP', 'MySQL', 'Redis', 'GCP']
   - Employer: Zumata
     Place: Singapore
     Positions:
@@ -55,7 +55,7 @@ Experience:
           - Enhance the system to handle 10x client request with 5x booking conversion.
           - Providing support to 12 new clients and potentially modifying the system to fit their requirements.
           - Integrate 6 new suppliers, involve understanding supplier system and designing our integration to take in the new feeds.
-        Badges: ['Go', 'Elixir', 'Phoenix', 'PostgreSQL', 'MySQL', 'Redis', 'GCP', 'Pivotal Tracker', 'Draw.io']
+        Badges: ['Go', 'Elixir', 'Phoenix', 'PostgreSQL', 'MySQL', 'Redis', 'GCP']
       - Title: Senior Software Engineer
         Date: Feb 2015 - Nov 2017
         Details:
@@ -121,14 +121,21 @@ Skills:
   - Family: Developer Tools
     Items:
       - Visual Studio Code (VS Code)
+      - Postman
+      - TablePlus
       - Git
       - Docker
       - Rancher
       - Jenkins
-      - Atlassian Suite (Jira, Confluence, Bitbucket, OpsGenie)
+      - Atlassian Suite (Jira, Confluence, OpsGenie)
       - Pivotal Tracker
       - MQTT
       - Google Suites (Gmail, Drive)
+  - Family: Git hosting platform
+    Items:
+      - GitLab
+      - Bitbucket
+      - GitHub
 
 Languages:
   - Name: Chinese
