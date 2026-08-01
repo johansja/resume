@@ -7,7 +7,7 @@ theme = "almeida-cv"
 disableKinds = ["page", "section", "taxonomy", "term", "RSS", "sitemap"]
 
 baseURL = "https://johansja.github.io/"
-title = "Johan Sim - CV"
+title = "Johan Sim - Senior Backend Engineering Leader"
 #googleAnalytics = ""
 
 [params]
@@ -24,6 +24,6 @@ colorRightColumnHeadingText = "#666"
 colorRightColumnBodyText = "#666"
 colorRightColumnIconPrimary = "#fff"
 colorRightColumnIconBackground = "#2b6777"
-pages = 2
+pages = 3
 # Set this param to 'true' to swap the bar positions
 swapColumns = false
