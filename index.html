@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Johan Sim — Senior Backend Engineering Leader</title>
+    <title>Johan Sim — Principal Backend Engineer</title>
     <meta
       name="description"
-      content="Senior backend engineering leader with 14+ years designing and building scalable distributed systems. Go, cloud architectures, and microservices across fintech, e-commerce, and AI platforms." />
+      content="Principal backend engineer with 14+ years building distributed systems and AI infrastructure. Architecting Bitdeer AI Cloud's managed-Kubernetes platform — greenfield per-customer control plane with GPU Operator, KAI/Volcano scheduling, Multus, and CSI." />
 
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="Johan Sim — Senior Backend Engineering Leader" />
+    <meta property="og:title" content="Johan Sim — Principal Backend Engineer" />
     <meta
       property="og:description"
-      content="Senior backend engineering leader with 14+ years designing and building scalable distributed systems. Go, cloud architectures, and microservices." />
+      content="Principal backend engineer with 14+ years building distributed systems and AI infrastructure. Go, Kubernetes, and the NVIDIA cloud-native stack." />
     <meta property="og:url" content="https://johansja.github.io/resume/" />
     <meta property="profile:first_name" content="Johan" />
     <meta property="profile:last_name" content="Sim" />
@@ -418,7 +418,6 @@
             <a href="#education">education</a>
             <a href="#skills">skills</a>
             <a href="#languages">languages</a>
-            <a href="#interests">interests</a>
           </div>
           <button
             class="theme-toggle"
@@ -441,12 +440,13 @@
       <header id="top" class="hero">
         <p class="prompt">$ whoami</p>
         <h1>Johan Sim</h1>
-        <p class="title">Senior Backend Engineering Leader</p>
+        <p class="title">Principal Backend Engineer</p>
         <p class="lede">
-          Backend engineering leader with 14+ years designing and building
-          scalable distributed systems. I lead teams to deliver high-performance
-          platforms across fintech, e-commerce, and AI, and care deeply about
-          clean code, robust testing, and mentoring engineers.
+          Principal backend engineer with 14+ years building distributed systems
+          and AI infrastructure. Architecting Bitdeer AI Cloud's
+          managed-Kubernetes platform — a greenfield per-customer control plane
+          running GPU Operator, KAI/Volcano scheduling, Multus, and CSI on
+          bare-metal NVIDIA GPU clusters.
         </p>
         <ul class="chips">
           <li>
@@ -485,17 +485,26 @@
               <p class="meta"><span class="date">Jan 2021 – Present</span> · Straitdeer (Bitdeer) · Singapore</p>
               <ul>
                 <li>
-                  Led architecture and backend development of the Bitdeer.ai
-                  Cloud AI Platform, powering end-to-end lifecycle management for
-                  AI workloads across multi-cloud infrastructure.
+                  Owned backend systems on the Bitdeer AI Cloud platform — AI
+                  workload management, container workloads, registry, and volumes
+                  on Kubeflow and the NVIDIA GPU Operator stack.
                 </li>
                 <li>
-                  Designed and built the AI Studio — a self-service environment
-                  for fine-tuning, evaluating, and deploying generative AI models
-                  — accelerating experimentation and model deployment by 3x.
+                  Hardened platform security: installed Falco runtime monitoring,
+                  closed SOC2 audit findings, and remediated notebook-service
+                  pentest findings (IDOR, process-arg leakage).
+                </li>
+                <li>
+                  Architected the greenfield managed-Kubernetes platform —
+                  per-customer dedicated control plane with externalized etcd,
+                  a CAPI-native lifecycle model replacing bespoke provisioning
+                  agents, and the data-model foundation (NodePool GPU/topology
+                  fields, add-on desired-state reconciler, cluster profiles,
+                  readiness gates) that unblocked both upstream engineering
+                  tracks.
                 </li>
               </ul>
-              <p class="stack">Go · Python · Kubernetes · gRPC · GCP · Aliyun · Observability</p>
+              <p class="stack">Go · Kubernetes · GPU Operator · Volcano/Kueue · Multus · NVIDIA CNS · CAPI · gRPC · Aliyun</p>
             </article>
           </li>
 
@@ -506,12 +515,11 @@
               <ul>
                 <li>
                   Led a 6-person backend team delivering the Order Management
-                  System, achieving 99.9% uptime and processing 500K+ daily
-                  transactions.
+                  System — 99.9% uptime, 500K+ daily transactions.
                 </li>
                 <li>
-                  Designed and implemented a new microservices architecture for
-                  marketplace orders, reducing system response time by 35%.
+                  Redesigned the marketplace order flow as a Go/gRPC microservices
+                  architecture, decoupling checkout, inventory, and fulfilment.
                 </li>
               </ul>
               <p class="stack">Go · PHP · gRPC · MySQL · Redis · GCP</p>
@@ -524,12 +532,12 @@
               <p class="meta"><span class="date">Mar 2019 – Nov 2019</span> · NTUC Enterprise Nexus · Singapore</p>
               <ul>
                 <li>
-                  Spearheaded development and deployment of the Scan &amp; Go
-                  mobile application, increasing customer engagement by 60%.
+                  Built the Scan &amp; Go self-checkout backend (Go/gRPC) handling
+                  in-store transactions across FairPrice stores.
                 </li>
                 <li>
-                  Conducted Go training sessions for 20+ engineers, accelerating
-                  team adoption by 3 months.
+                  Ran Go onboarding training for 20+ engineers as the team
+                  migrated off PHP.
                 </li>
               </ul>
               <p class="stack">Go · PHP · MySQL · Redis · GCP</p>
@@ -542,12 +550,11 @@
               <p class="meta"><span class="date">Dec 2017 – Feb 2019</span> · Zumata · Singapore</p>
               <ul>
                 <li>
-                  Led engineering teams in scaling a travel booking platform to
-                  handle 10x more client requests while improving booking
-                  conversion 5x.
+                  Led engineering of a B2B travel booking platform aggregating
+                  hotel and flight suppliers via async supplier polling.
                 </li>
                 <li>
-                  Implemented real-time availability checking that reduced booking
+                  Implemented real-time availability checking that cut booking
                   confirmation time from 30s to 3s.
                 </li>
               </ul>
@@ -562,12 +569,13 @@
               <ul>
                 <li>
                   Containerized and deployed microservices on Kubernetes with a
-                  CI/CD pipeline, improving deployment frequency from weekly to
+                  CI/CD pipeline, moving deployment frequency from weekly to
                   daily.
                 </li>
                 <li>
-                  Redesigned the API with a polling mechanism that reduced initial
-                  result delivery time by 70%.
+                  Redesigned the search API with async supplier polling that
+                  returned initial results in seconds instead of blocking on the
+                  slowest supplier.
                 </li>
               </ul>
               <p class="stack">Go · Ruby · RoR · PostgreSQL · Redis · GCP</p>
@@ -592,25 +600,6 @@
               <p class="stack">Python · Java · C · PostgreSQL · MQTT · Django</p>
             </article>
           </li>
-
-          <li>
-            <article class="role">
-              <h3>Software Engineer</h3>
-              <p class="meta"><span class="date">Mar 2011 – Jun 2011</span> · e-Business · Penang, Malaysia</p>
-              <ul>
-                <li>
-                  Developed a Java-based system to replace a legacy C#
-                  application, improving maintainability and cutting licensing
-                  costs by 40%.
-                </li>
-                <li>
-                  Built RESTful APIs integrating third-party payment and logistics
-                  providers.
-                </li>
-              </ul>
-              <p class="stack">Java · C# · MySQL</p>
-            </article>
-          </li>
         </ol>
       </section>
 
@@ -633,31 +622,27 @@
         <div class="skill-grid">
           <div class="skill-group">
             <h4>Languages</h4>
-            <ul class="chips"><li>Go</li><li>PHP</li><li>Python</li><li>Java</li><li>Elixir</li><li>C</li><li>C#</li></ul>
+            <ul class="chips"><li>Go</li><li>Python</li></ul>
+          </div>
+          <div class="skill-group">
+            <h4>AI Infrastructure</h4>
+            <ul class="chips"><li>Kubernetes</li><li>GPU Operator</li><li>Volcano</li><li>Kueue</li><li>KAI Scheduler</li><li>Multus</li><li>NVIDIA CNS</li><li>CAPI</li><li>gRPC</li></ul>
+          </div>
+          <div class="skill-group">
+            <h4>Cloud &amp; Platforms</h4>
+            <ul class="chips"><li>Aliyun</li><li>GCP</li><li>Bare-metal multi-region DCs</li></ul>
           </div>
           <div class="skill-group">
             <h4>Databases</h4>
             <ul class="chips"><li>MySQL</li><li>PostgreSQL</li><li>Redis</li></ul>
           </div>
           <div class="skill-group">
-            <h4>Cloud</h4>
-            <ul class="chips"><li>GCP</li><li>Aliyun</li><li>GKE</li><li>Pub/Sub</li><li>Cloud Run</li></ul>
-          </div>
-          <div class="skill-group">
-            <h4>Frameworks</h4>
-            <ul class="chips"><li>gRPC</li><li>Phoenix</li><li>Rails</li><li>Django</li></ul>
-          </div>
-          <div class="skill-group">
             <h4>Architecture</h4>
-            <ul class="chips"><li>Microservices</li><li>Distributed Systems</li><li>Scalability</li><li>API Design</li><li>Kubernetes</li><li>Docker</li></ul>
-          </div>
-          <div class="skill-group">
-            <h4>Tools</h4>
-            <ul class="chips"><li>Git</li><li>VS Code</li><li>Postman</li><li>TablePlus</li><li>Jenkins</li><li>Atlassian</li></ul>
+            <ul class="chips"><li>Distributed Systems</li><li>Microservices</li><li>API Design</li><li>Per-customer Control Planes</li><li>Kubernetes Operators</li><li>Docker</li></ul>
           </div>
           <div class="skill-group">
             <h4>Practices</h4>
-            <ul class="chips"><li>Agile/Scrum</li><li>TDD</li><li>CI/CD</li><li>Code Review</li></ul>
+            <ul class="chips"><li>TDD</li><li>CI/CD</li><li>Code Review</li><li>SOC2 Hardening</li></ul>
           </div>
         </div>
       </section>
@@ -665,11 +650,6 @@
       <section id="languages">
         <h2 class="sec">languages</h2>
         <p class="inline-list">Chinese (Mandarin) — Native · English — Fluent · Malay — Fluent</p>
-      </section>
-
-      <section id="interests">
-        <h2 class="sec">interests</h2>
-        <p class="inline-list">Technical Reading · Open Source · Basketball</p>
       </section>
 
       <footer>
@@ -721,7 +701,7 @@
           },
           { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
         );
-        ["top", "experience", "education", "skills", "languages", "interests"].forEach(
+        ["top", "experience", "education", "skills", "languages"].forEach(
           function (id) {
             var el = document.getElementById(id);
             if (el) io.observe(el);
