@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Johan Sim — Senior Backend Engineering Leader</title>
+    <meta
+      name="description"
+      content="Senior backend engineering leader with 14+ years designing and building scalable distributed systems. Go, cloud architectures, and microservices across fintech, e-commerce, and AI platforms." />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Johan Sim — Senior Backend Engineering Leader" />
+    <meta
+      property="og:description"
+      content="Senior backend engineering leader with 14+ years designing and building scalable distributed systems. Go, cloud architectures, and microservices." />
+    <meta property="og:url" content="https://johansja.github.io/resume/" />
+    <meta property="profile:first_name" content="Johan" />
+    <meta property="profile:last_name" content="Sim" />
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230172ad'/><text x='16' y='23' font-family='monospace' font-size='20' font-weight='700' fill='%23fff' text-anchor='middle'>J</text></svg>" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+
+    <!-- Apply persisted/explicit theme before paint to avoid FOUC -->
+    <script>
+      (function () {
+        var t =
+          localStorage.getItem("theme") ||
+          (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", t);
+      })();
+    </script>
+
+    <style>
+      :root {
+        --nav-h: 3.5rem;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+
+      /* Tone Pico's container to an editorial measure */
+      main.container,
+      .nav-inner {
+        max-width: 52rem;
+      }
+
+      /* ---------- Sticky nav (A + C) ---------- */
+      .topnav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        backdrop-filter: blur(10px) saturate(140%);
+        background: color-mix(in srgb, var(--pico-background-color) 82%, transparent);
+        border-bottom: 1px solid var(--pico-border-color);
+      }
+      .nav-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--pico-spacing);
+        min-height: var(--nav-h);
+        padding-block: 0.4rem;
+      }
+      .topnav .brand {
+        font-family: var(--pico-font-family-monospace);
+        font-weight: 600;
+        color: var(--pico-primary);
+        margin: 0;
+        text-decoration: none;
+      }
+      .topnav .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      .topnav .navlinks {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25rem 1rem;
+      }
+      .topnav .navlinks a {
+        font-family: var(--pico-font-family-monospace);
+        font-size: 0.85rem;
+        color: var(--pico-muted-color);
+        text-decoration: none;
+        padding: 0.15rem 0;
+      }
+      .topnav .navlinks a:hover,
+      .topnav .navlinks a.active {
+        color: var(--pico-primary);
+      }
+      .topnav .navlinks a.active {
+        text-decoration: underline;
+        text-underline-offset: 0.25rem;
+      }
+
+      /* ---------- Theme toggle ---------- */
+      .theme-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        height: 2rem;
+        padding: 0;
+        margin: 0;
+        background: transparent;
+        border: 1px solid var(--pico-border-color);
+        border-radius: 999px;
+        color: var(--pico-muted-color);
+        cursor: pointer;
+        line-height: 0;
+      }
+      .theme-toggle:hover {
+        color: var(--pico-primary);
+        border-color: var(--pico-primary);
+      }
+      .theme-toggle svg {
+        width: 0.95rem;
+        height: 0.95rem;
+      }
+      .theme-toggle .icon-sun {
+        display: none;
+      }
+      [data-theme="dark"] .theme-toggle .icon-sun {
+        display: block;
+      }
+      [data-theme="dark"] .theme-toggle .icon-moon {
+        display: none;
+      }
+
+      /* ---------- Hero (A + C) ---------- */
+      .hero {
+        padding-block: clamp(2.5rem, 8vw, 5rem) 2rem;
+      }
+      .hero .prompt {
+        font-family: var(--pico-font-family-monospace);
+        color: var(--pico-primary);
+        margin-bottom: 0.5rem;
+      }
+      .hero h1 {
+        margin: 0;
+        font-size: clamp(2.6rem, 9vw, 4.2rem);
+        line-height: 1.05;
+        letter-spacing: -0.02em;
+        font-weight: 700;
+      }
+      .hero .title {
+        margin: 0.6rem 0 0;
+        font-size: clamp(1.1rem, 3vw, 1.35rem);
+        font-weight: 600;
+        color: var(--pico-primary);
+      }
+      .hero .lede {
+        margin-top: 1.2rem;
+        max-width: 42rem;
+        color: var(--pico-muted-color);
+      }
+      .hero .chips {
+        margin-top: 1.5rem;
+      }
+
+      /* ---------- Section labels (C) ---------- */
+      section {
+        scroll-margin-top: calc(var(--nav-h) + 1rem);
+        margin-top: clamp(2rem, 6vw, 3.5rem);
+      }
+      .sec {
+        font-family: var(--pico-font-family-monospace);
+        font-size: 0.9rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        color: var(--pico-muted-color);
+        margin-bottom: 1.5rem;
+        text-transform: lowercase;
+      }
+      .sec::before {
+        content: "// ";
+        color: var(--pico-primary);
+      }
+
+      /* ---------- Chips (A) ---------- */
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .chips li,
+      .chips > a {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.3rem 0.75rem;
+        font-size: 0.85rem;
+        border: 1px solid var(--pico-border-color);
+        border-radius: 999px;
+        background: var(--pico-card-background-color);
+        color: var(--pico-color);
+        text-decoration: none;
+      }
+      .chips > a:hover {
+        border-color: var(--pico-primary);
+        color: var(--pico-primary);
+      }
+      .hero .chips > a span {
+        opacity: 0.7;
+        margin-left: 0.4rem;
+        font-size: 0.78rem;
+      }
+
+      /* ---------- Experience timeline (B + D) ---------- */
+      .timeline {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .timeline > li {
+        position: relative;
+        padding-left: 2rem;
+        padding-bottom: clamp(1.5rem, 4vw, 2.25rem);
+        border-left: 2px solid var(--pico-border-color);
+      }
+      .timeline > li:last-child {
+        padding-bottom: 0;
+        border-left-color: transparent;
+      }
+      .timeline > li::before {
+        content: "";
+        position: absolute;
+        left: -8px;
+        top: 0.35rem;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: var(--pico-background-color);
+        border: 3px solid var(--pico-primary);
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--pico-primary) 18%, transparent);
+      }
+      .timeline .role {
+        margin: 0;
+        padding: var(--pico-spacing) clamp(1rem, 3vw, 1.4rem);
+        background: var(--pico-card-background-color);
+        border: 1px solid var(--pico-card-border-color);
+        border-radius: var(--pico-border-radius);
+        box-shadow: var(--pico-card-box-shadow);
+      }
+      .timeline .role h3 {
+        margin-bottom: 0.15rem;
+      }
+      .timeline .role .meta {
+        font-family: var(--pico-font-family-monospace);
+        font-size: 0.8rem;
+        color: var(--pico-muted-color);
+        margin: 0 0 0.9rem;
+      }
+      .timeline .role .meta .date {
+        color: var(--pico-primary);
+        font-weight: 600;
+      }
+      .timeline .role ul {
+        margin-bottom: 0.9rem;
+      }
+      .timeline .role ul li {
+        margin-bottom: 0.35rem;
+      }
+      .timeline .role .stack {
+        font-family: var(--pico-font-family-monospace);
+        font-size: 0.78rem;
+        color: var(--pico-muted-color);
+        margin: 0;
+      }
+
+      /* ---------- Skills ---------- */
+      .skill-grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+      }
+      .skill-group h4 {
+        font-family: var(--pico-font-family-monospace);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--pico-muted-color);
+        margin: 0 0 0.6rem;
+      }
+
+      /* ---------- Education cards ---------- */
+      .edu-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+      }
+      .edu {
+        margin: 0;
+        padding: var(--pico-spacing);
+        background: var(--pico-card-background-color);
+        border: 1px solid var(--pico-card-border-color);
+        border-radius: var(--pico-border-radius);
+      }
+      .edu h3 {
+        margin-bottom: 0.15rem;
+        font-size: 1.05rem;
+      }
+      .edu .meta {
+        font-family: var(--pico-font-family-monospace);
+        font-size: 0.8rem;
+        color: var(--pico-muted-color);
+        margin: 0;
+      }
+
+      /* ---------- Languages / interests ---------- */
+      .inline-list {
+        font-family: var(--pico-font-family-monospace);
+        font-size: 0.9rem;
+        color: var(--pico-muted-color);
+        margin: 0;
+      }
+
+      footer {
+        margin-top: clamp(2.5rem, 6vw, 4rem);
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--pico-border-color);
+        font-family: var(--pico-font-family-monospace);
+        font-size: 0.8rem;
+        color: var(--pico-muted-color);
+      }
+
+      /* ---------- Print: flatten to a clean resume ---------- */
+      @media print {
+        :root {
+          --pico-color: #000;
+          --pico-muted-color: #333;
+          --pico-background-color: #fff;
+          --pico-primary: #000;
+          --pico-border-color: #ccc;
+          --pico-card-background-color: #fff;
+          --pico-card-border-color: #ccc;
+          --pico-card-box-shadow: none;
+        }
+        .topnav,
+        .theme-toggle {
+          display: none !important;
+        }
+        main.container {
+          max-width: none;
+        }
+        .hero {
+          padding-block: 0 0;
+        }
+        .hero .prompt {
+          display: none;
+        }
+        .hero h1 {
+          font-size: 2rem;
+        }
+        .hero .chips li,
+        .hero .chips > a {
+          display: inline;
+          border: 0;
+          background: transparent;
+          padding: 0;
+          font-size: 0.85rem;
+        }
+        section {
+          margin-top: 1.2rem;
+          break-inside: avoid;
+        }
+        .timeline > li {
+          border-left: 0;
+          padding-left: 0;
+          padding-bottom: 0.8rem;
+        }
+        .timeline > li::before {
+          display: none;
+        }
+        .timeline .role {
+          box-shadow: none;
+          border: 0;
+          padding: 0 0 0.4rem;
+          background: transparent;
+        }
+        footer {
+          border: 0;
+          margin-top: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="topnav">
+      <div class="container nav-inner">
+        <a class="brand" href="#top">~/johansja</a>
+        <div class="nav-right">
+          <div class="navlinks">
+            <a href="#experience">experience</a>
+            <a href="#education">education</a>
+            <a href="#skills">skills</a>
+            <a href="#languages">languages</a>
+            <a href="#interests">interests</a>
+          </div>
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            type="button"
+            aria-label="Toggle color theme">
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <header id="top" class="hero">
+        <p class="prompt">$ whoami</p>
+        <h1>Johan Sim</h1>
+        <p class="title">Senior Backend Engineering Leader</p>
+        <p class="lede">
+          Backend engineering leader with 14+ years designing and building
+          scalable distributed systems. I lead teams to deliver high-performance
+          platforms across fintech, e-commerce, and AI, and care deeply about
+          clean code, robust testing, and mentoring engineers.
+        </p>
+        <ul class="chips">
+          <li><a href="tel:+6598640146">+65 9864 0146</a></li>
+          <li><a href="mailto:johansja@gmail.com">johansja@gmail.com</a></li>
+          <li><a href="https://github.com/johansja" target="_blank" rel="noopener">github.com/johansja</a></li>
+          <li><span>Singapore</span></li>
+        </ul>
+      </header>
+
+      <section id="experience">
+        <h2 class="sec">experience</h2>
+        <ol class="timeline">
+          <li>
+            <article class="role">
+              <h3>Principal Software Engineer</h3>
+              <p class="meta"><span class="date">Jan 2021 – Present</span> · Straitdeer (Bitdeer) · Singapore</p>
+              <ul>
+                <li>
+                  Led architecture and backend development of the Bitdeer.ai
+                  Cloud AI Platform, powering end-to-end lifecycle management for
+                  AI workloads across multi-cloud infrastructure.
+                </li>
+                <li>
+                  Designed and built the AI Studio — a self-service environment
+                  for fine-tuning, evaluating, and deploying generative AI models
+                  — accelerating experimentation and model deployment by 3x.
+                </li>
+              </ul>
+              <p class="stack">Go · Python · Kubernetes · gRPC · GCP · Aliyun · Observability</p>
+            </article>
+          </li>
+
+          <li>
+            <article class="role">
+              <h3>Backend Team Lead</h3>
+              <p class="meta"><span class="date">Dec 2019 – Dec 2021</span> · NTUC Enterprise Nexus · Singapore</p>
+              <ul>
+                <li>
+                  Led a 6-person backend team delivering the Order Management
+                  System, achieving 99.9% uptime and processing 500K+ daily
+                  transactions.
+                </li>
+                <li>
+                  Designed and implemented a new microservices architecture for
+                  marketplace orders, reducing system response time by 35%.
+                </li>
+              </ul>
+              <p class="stack">Go · PHP · gRPC · MySQL · Redis · GCP</p>
+            </article>
+          </li>
+
+          <li>
+            <article class="role">
+              <h3>Senior Software Engineer</h3>
+              <p class="meta"><span class="date">Mar 2019 – Nov 2019</span> · NTUC Enterprise Nexus · Singapore</p>
+              <ul>
+                <li>
+                  Spearheaded development and deployment of the Scan &amp; Go
+                  mobile application, increasing customer engagement by 60%.
+                </li>
+                <li>
+                  Conducted Go training sessions for 20+ engineers, accelerating
+                  team adoption by 3 months.
+                </li>
+              </ul>
+              <p class="stack">Go · PHP · MySQL · Redis · GCP</p>
+            </article>
+          </li>
+
+          <li>
+            <article class="role">
+              <h3>Tech Lead</h3>
+              <p class="meta"><span class="date">Dec 2017 – Feb 2019</span> · Zumata · Singapore</p>
+              <ul>
+                <li>
+                  Led engineering teams in scaling a travel booking platform to
+                  handle 10x more client requests while improving booking
+                  conversion 5x.
+                </li>
+                <li>
+                  Implemented real-time availability checking that reduced booking
+                  confirmation time from 30s to 3s.
+                </li>
+              </ul>
+              <p class="stack">Go · Elixir · Phoenix · PostgreSQL · GCP</p>
+            </article>
+          </li>
+
+          <li>
+            <article class="role">
+              <h3>Senior Software Engineer</h3>
+              <p class="meta"><span class="date">Feb 2015 – Nov 2017</span> · Zumata · Singapore</p>
+              <ul>
+                <li>
+                  Containerized and deployed microservices on Kubernetes with a
+                  CI/CD pipeline, improving deployment frequency from weekly to
+                  daily.
+                </li>
+                <li>
+                  Redesigned the API with a polling mechanism that reduced initial
+                  result delivery time by 70%.
+                </li>
+              </ul>
+              <p class="stack">Go · Ruby · RoR · PostgreSQL · Redis · GCP</p>
+            </article>
+          </li>
+
+          <li>
+            <article class="role">
+              <h3>Software Engineer</h3>
+              <p class="meta"><span class="date">Jul 2011 – Jan 2015</span> · Intel · Penang, Malaysia</p>
+              <ul>
+                <li>
+                  Developed white-label SaaS products showcasing platform
+                  capabilities, contributing to 3 contract wins worth $1M+
+                  combined.
+                </li>
+                <li>
+                  Implemented IoT data collection pipelines in Python and MQTT,
+                  handling 10K+ devices and 1M+ daily data points.
+                </li>
+              </ul>
+              <p class="stack">Python · Java · C · PostgreSQL · MQTT · Django</p>
+            </article>
+          </li>
+
+          <li>
+            <article class="role">
+              <h3>Software Engineer</h3>
+              <p class="meta"><span class="date">Mar 2011 – Jun 2011</span> · e-Business · Penang, Malaysia</p>
+              <ul>
+                <li>
+                  Developed a Java-based system to replace a legacy C#
+                  application, improving maintainability and cutting licensing
+                  costs by 40%.
+                </li>
+                <li>
+                  Built RESTful APIs integrating third-party payment and logistics
+                  providers.
+                </li>
+              </ul>
+              <p class="stack">Java · C# · MySQL</p>
+            </article>
+          </li>
+        </ol>
+      </section>
+
+      <section id="education">
+        <h2 class="sec">education</h2>
+        <div class="edu-grid">
+          <article class="edu">
+            <h3>BSc Computing (First Class Honours)</h3>
+            <p class="meta">University of Greenwich, UK · Jul 2009 – Dec 2010</p>
+          </article>
+          <article class="edu">
+            <h3>Diploma in Computer Science</h3>
+            <p class="meta">Methodist Pilley Institute, Malaysia · Jul 2006 – Apr 2009</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2 class="sec">skills</h2>
+        <div class="skill-grid">
+          <div class="skill-group">
+            <h4>Languages</h4>
+            <ul class="chips"><li>Go</li><li>PHP</li><li>Python</li><li>Java</li><li>Elixir</li><li>C</li><li>C#</li></ul>
+          </div>
+          <div class="skill-group">
+            <h4>Databases</h4>
+            <ul class="chips"><li>MySQL</li><li>PostgreSQL</li><li>Redis</li></ul>
+          </div>
+          <div class="skill-group">
+            <h4>Cloud</h4>
+            <ul class="chips"><li>GCP</li><li>Aliyun</li><li>GKE</li><li>Pub/Sub</li><li>Cloud Run</li></ul>
+          </div>
+          <div class="skill-group">
+            <h4>Frameworks</h4>
+            <ul class="chips"><li>gRPC</li><li>Phoenix</li><li>Rails</li><li>Django</li></ul>
+          </div>
+          <div class="skill-group">
+            <h4>Architecture</h4>
+            <ul class="chips"><li>Microservices</li><li>Distributed Systems</li><li>Scalability</li><li>API Design</li><li>Kubernetes</li><li>Docker</li></ul>
+          </div>
+          <div class="skill-group">
+            <h4>Tools</h4>
+            <ul class="chips"><li>Git</li><li>VS Code</li><li>Postman</li><li>TablePlus</li><li>Jenkins</li><li>Atlassian</li></ul>
+          </div>
+          <div class="skill-group">
+            <h4>Practices</h4>
+            <ul class="chips"><li>Agile/Scrum</li><li>TDD</li><li>CI/CD</li><li>Code Review</li></ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="languages">
+        <h2 class="sec">languages</h2>
+        <p class="inline-list">Chinese (Mandarin) — Native · English — Fluent · Malay — Fluent</p>
+      </section>
+
+      <section id="interests">
+        <h2 class="sec">interests</h2>
+        <p class="inline-list">Technical Reading · Open Source · Basketball</p>
+      </section>
+
+      <footer>
+        <p>© Johan Sim · built with Pico.css</p>
+      </footer>
+    </main>
+
+    <script>
+      (function () {
+        // ---- Theme toggle ----
+        var root = document.documentElement;
+        var btn = document.getElementById("theme-toggle");
+        function sync() {
+          var dark = root.getAttribute("data-theme") === "dark";
+          btn.setAttribute(
+            "aria-label",
+            dark ? "Switch to light theme" : "Switch to dark theme"
+          );
+        }
+        btn.addEventListener("click", function () {
+          var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+          root.setAttribute("data-theme", next);
+          try {
+            localStorage.setItem("theme", next);
+          } catch (e) {}
+          sync();
+        });
+        sync();
+
+        // ---- Scroll-spy: highlight current section in nav ----
+        var links = Array.prototype.slice.call(
+          document.querySelectorAll(".navlinks a")
+        );
+        var byId = {};
+        links.forEach(function (a) {
+          byId[a.getAttribute("href").slice(1)] = a;
+        });
+        var io = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (e) {
+              if (e.isIntersecting) {
+                links.forEach(function (a) {
+                  a.classList.remove("active");
+                });
+                var a = byId[e.target.id];
+                if (a) a.classList.add("active");
+              }
+            });
+          },
+          { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
+        );
+        ["top", "experience", "education", "skills", "languages", "interests"].forEach(
+          function (id) {
+            var el = document.getElementById(id);
+            if (el) io.observe(el);
+          }
+        );
+      })();
+    </script>
+  </body>
+</html>
